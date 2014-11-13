@@ -14,6 +14,10 @@ angular.module('AddressBook', [])
 		$scope.employees = pawneeEmployees;
 		$scope.order = 'lastName';
 
+		$scope.sortBy = function(sort) {
+			return $scope.order == sort;
+		};
+
 
 
 });
